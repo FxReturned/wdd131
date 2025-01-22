@@ -1,0 +1,144 @@
+:root {
+    --primary-color-Rich-black: #0D1B2A;
+    --secondary-color-Oxford-Blue: #1B263B;
+    --accent1-color-YInMn-Blue: #415A77;
+    --accent2-color-SilverLake-Blue: #778DA9;
+    --accent3-color-Platinum: #E0E1DD;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", serif;
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: var(--paragraph-font);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--secondary-color-Oxford-Blue);
+    padding: 10px;
+    color: var(--accent3-color-Platinum);
+}
+
+
+header h1 {
+    margin: auto 5px;
+}
+
+#menu {
+    font-size: 2rem;
+    border: 0;
+    background-color: var(--secondary-color-Oxford-Blue);
+    color: var(--accent1-color);
+    position: absolute;
+    top: 1.2rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+#menu.open::before {
+    content: "❎";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--accent3-color-Platinum);
+    width: 100%;
+}
+
+.navigation a:hover {
+    color: var(--accent3-color-Platinum);
+    text-decoration: underline 2px solid var(--accent3-color-Platinum);
+    transition: all 5ms ease-in-out;
+
+}
+
+
+.open a {
+    display: block;
+    font-size: 1.5rem;
+}
+
+.hidden {
+    display: none;
+}
+
+main {
+    margin: 1rem auto;
+    max-width: 730px;
+}
+
+.home {
+
+    border-bottom: 1px solid #777;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 25px;
+    place-items: center;
+    margin: 5px 20px;
+}
+
+figure {
+    background-color: #fff;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    font-size: smaller;
+    text-align: center;
+}
+
+footer {
+    background-color: var(--secondary-color-Oxford-Blue);
+    color: var(--accent3-color-Platinum);
+    text-align: center;
+    padding: 1rem;
+}
