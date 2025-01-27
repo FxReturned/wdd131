@@ -1,3 +1,9 @@
+:root {
+    --primary-color: #333;
+    --secondary-color: white;
+
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -55,13 +61,13 @@ td.label {
 header {
     padding: 20px;
     text-align: center;
-    background-color: #333;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 .hero-section {
     grid-row: 1;
-    background-color: #fff;
+    background-color: var(--secondary-color);
     padding-top: 20px;
 }
 
@@ -99,8 +105,8 @@ header {
 
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     padding: 25px 0;
     text-align: center;
     font-size: 1rem;
