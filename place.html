@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Cesar Cordova Iturbe - Country Page ">
+    <meta name="author" content="Cesar Cordova">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Country Page</title>
+</head>
+<body>
+    <header>
+        <h1>Peru</h1>
+    </header>
+    <main class="container">
+        <div class="hero-section">
+            <picture class="hero">
+                <source media="(min-width: 1000px)" srcset="images/peru-large.jpg">
+                <source media="(min-width: 620px)" srcset="images/peru-small.jpg">
+                <img src="images/peru-small.jpg" alt="Peru">
+            </picture>
+        </div>
+        <div class="data">
+            <h2 class="box-title">Data</h2>
+            <table>
+                <tr>
+                    <td class="label"><b>Area:</b></td>
+                    <td>1,285,000 km²</td>
+                </tr>
+                <tr>
+                    <td class="label"><b>Population:</b></td>
+                    <td>34,350,000</td>
+                </tr>
+                <tr>
+                    <td class="label"><b>Capital:</b></td>
+                    <td>Lima</td>
+                </tr>
+                <tr>
+                    <td class="label"><b>Languages:</b></td>
+                    <td>Spanish - Quechua - Aymara</td>
+                </tr>
+                <tr>
+                    <td class="label"><b>Currency:</b></td>
+                    <td>Nuevo Sol (PEN)</td>
+                </tr>
+                <tr>
+                    <td class="label"><b>Time Zone:</b></td>
+                    <td>Peru Time (PET)</td>
+                </tr>
+                <tr>
+                    <td class="label"><b>Calling Code:</b></td>
+                    <td>+51</td>
+                </tr>
+                <tr>
+                    <td class="label"><b>Internet TLD:</b></td>
+                    <td>.pe</td>
+                </tr>
+            </table>
+        </div>
+        <div class="weather">
+            <h2 class="box-title">Weather <span class="weather-icon">&#9925;</span></h2>
+            <img src="images/weather.svg" alt="light weather">
+            <table>
+                <tr>
+                    <td class="label"><b>Temperature:</b></td>
+                    <td id="temperature">33 °C</td>
+                </tr>
+                <tr>
+                    <td class="label"><b>Conditions:</b></td>
+                    <td>Cloudy</td>
+                </tr>
+                <tr>
+                    <td class="label"><b>Wind:</b></td>
+                    <td id="windspeed">SW 12 km/h</td>
+                </tr>
+                <tr>
+                    <td class="label"><b>Wind Chill:</b></td>
+                    <td id="windchill">10 °C</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <footer>    
+        <p>
+            © <span id="currentyear">year</span>- Cesar Cordova Iturbe - Trujillo Peru
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

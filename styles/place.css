@@ -1,0 +1,108 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", serif;
+    margin: 0 auto;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    padding-bottom: 20px
+}
+
+h2,
+h1 {
+    margin: 0%;
+}
+
+table {
+    margin: 0 auto;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.weather table {
+    padding: 25px 0;
+}
+
+td {
+    padding: 5px 5px;
+}
+
+td.label {
+    text-align: right;
+}
+
+.container {
+    text-align: center;
+    display: grid;
+    grid-template-rows: 2fr auto auto;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header {
+    padding: 20px;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+}
+
+.hero-section {
+    grid-row: 1;
+    background-color: #fff;
+    padding-top: 20px;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    mask-image: linear-gradient(#333 95%,
+    transparent);
+}
+
+.data,
+.weather {
+    padding-top: 25px;
+}
+
+.data {
+    grid-row: 2;
+
+}
+
+.weather-icon {
+    display: none;
+}
+
+.weather {
+    grid-row: 3;
+    margin-bottom: 50px;
+}
+
+
+.weather img {
+    width: 15%;
+    height: auto;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 25px 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
