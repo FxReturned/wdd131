@@ -75,25 +75,25 @@ const temples = [
     },
 
     {
-      templeName: "Accra Ghana",
-      location: "Accra, Ghana",
-      dedicated: "2019, March, 15",
-      area: 12000,
-      imageUrl: "https://via.placeholder.com/400x250?text=Accra+Ghana+Temple"
+      templeName: "Arequipa Perú",
+      location: "Arequipa, Perú",
+      dedicated: "2019, December, 15",
+      area: 26969,
+      imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/arequipa-peru-temple/arequipa-peru-temple-7186-main.jpg"
     },
     {
       templeName: "San Diego California",
       location: "San Diego, California, United States",
-      dedicated: "2008, October, 12",
-      area: 95000,
-      imageUrl: "https://via.placeholder.com/400x250?text=San+Diego+Temple"
+      dedicated: "1993, April, 30",
+      area: 72000,
+      imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/san-diego-california-temple/san-diego-california-temple-9060-main.jpg"
     },
     {
       templeName: "Tokyo Japan",
       location: "Tokyo, Japan",
-      dedicated: "1992, April, 5",
-      area: 8500,
-      imageUrl: "https://via.placeholder.com/400x250?text=Tokyo+Temple"
+      dedicated: "1980, October, 29",
+      area: 53997,
+      imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/tokyo-japan-temple/tokyo-japan-temple-26340-main.jpg"
     }
   ];
   
