@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/project.css">
+  <script src="scripts/project.js" defer></script>
+  <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Cesar Cordova Iturbe - Final Project - Home">
+  <meta name="author" content="Cesar Cordova">
+  <title>Dessert Haven - Home</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <button id="menu-toggle">&#9776;</button>
+      <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catalog.html">Catalog</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="banner">
+      <h1>Welcome to Dessert Haven</h1>
+      <p>Your ultimate destination for irresistible desserts.</p>
+    </section>
+    
+    <section class="featured-products">
+      <h2>Featured Desserts</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="images/chocolate-cake.jpg" alt="Decadent Chocolate Cake image" loading="lazy">
+          <h3>Decadent Chocolate Cake</h3>
+          <p>Indulge in layers of rich chocolate sponge filled with velvety ganache, topped with delicate chocolate shavings and fresh raspberries. A must-try for true chocolate lovers.</p>
+          <p>$25.99</p>
+          <button onclick="addToCart(1)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="images/strawberry-cheesecake.jpg" alt="Strawberry Cheesecake image" loading="lazy">
+          <h3>Strawberry Cheesecake</h3>
+          <p>Enjoy our creamy cheesecake on a buttery graham cracker crust, crowned with vibrant fresh strawberries and a drizzle of strawberry sauce for the perfect balance of tangy and sweet.</p>
+          <p>$29.99</p>
+          <button onclick="addToCart(2)">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+    
+    <section class="about-us">
+        <h2>About Us</h2>
+        <p>
+            At Dessert Haven, we are passionate about creating delightful desserts that brighten your day. Each treat is carefully crafted with premium ingredients and a touch of creativity to deliver unforgettable flavors. Our mission is to provide an exceptional dessert experience that satisfies your sweet cravings.
+        </p>
+    </section>
+    
+  </main>
+  
+  <footer>
+    <p>
+        © <span id="currentyear">year</span> - Cesar Cordova Iturbe - Trujillo Peru
+    </p>
+    <p><a href="references.html">References</a></p>
+  </footer>
+</body>
+</html>
