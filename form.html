@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Review</title>
+  <link rel="stylesheet" href="styles/form.css" />
+  <script src="scripts/form.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Product Review</h1>
+  </header>
+
+  <main>
+    <form method="get" action="review.html">
+      <div class="form-group">
+        <label for="productSelect">Product Name</label>
+        <select id="productSelect" name="product" required>
+          <option value="" disabled selected>Choose a Product …</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <fieldset>
+          <legend>Overall Rating</legend>
+          <label for="rating-1">
+            <input type="radio" id="rating-1" name="rating" value="1" required>
+            ★
+          </label>
+          <label for="rating-2">
+            <input type="radio" id="rating-2" name="rating" value="2">
+            ★★
+          </label>
+          <label for="rating-3">
+            <input type="radio" id="rating-3" name="rating" value="3">
+            ★★★
+          </label>
+          <label for="rating-4">
+            <input type="radio" id="rating-4" name="rating" value="4">
+            ★★★★
+          </label>
+          <label for="rating-5">
+            <input type="radio" id="rating-5" name="rating" value="5">
+            ★★★★★
+          </label>
+        </fieldset>
+      </div>
+
+      <div class="form-group">
+        <label for="installationDate">Date of Installation</label>
+        <input type="date" id="installationDate" name="installationDate" placeholder="mm / dd / yyyy" required>
+      </div>
+
+      <div class="form-group">
+        <fieldset>
+          <legend>Which features did you find useful in the product? <br>(Check all that apply)</legend>
+          <label for="feature-durability">
+            <input type="checkbox" id="feature-durability" name="features" value="Durability">
+            Durability
+          </label>
+          <label for="feature-ease">
+            <input type="checkbox" id="feature-ease" name="features" value="Ease of Use">
+            Ease of Use
+          </label>
+          <label for="feature-performance">
+            <input type="checkbox" id="feature-performance" name="features" value="Performance">
+            Performance
+          </label>
+          <label for="feature-design">
+            <input type="checkbox" id="feature-design" name="features" value="Design">
+            Design
+          </label>
+        </fieldset>
+      </div>
+
+      <div class="form-group">
+        <label for="reviewText">Written Review <span class="optional">(Optional)</span></label>
+        <textarea id="reviewText" name="review" rows="4" placeholder="Write your review here..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="userName">Your Name <span class="optional">(Optional)</span></label>
+        <input type="text" id="userName" name="user" placeholder="Your Name">
+      </div>
+
+      <div class="form-group">
+        <input type="submit" value="Post Review">
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <p>
+        © <span id="currentyear">year</span> - Cesar Cordova Iturbe - Trujillo Peru
+    </p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
