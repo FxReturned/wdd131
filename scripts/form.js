@@ -1,4 +1,3 @@
-// Product Array
 const products = [
     { id: "fc-1888", name: "Flux Capacitor", averagerating: 4.5 },
     { id: "fc-2050", name: "Power Laces", averagerating: 4.7 },
@@ -18,7 +17,6 @@ const products = [
     });
   });
   
- // Footer
 const currentYear = new Date().getFullYear();
 const lastModified = document.lastModified;
 const copyrightYearElement = document.getElementById('currentyear');
